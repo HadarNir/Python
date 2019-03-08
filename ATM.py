@@ -3,7 +3,7 @@ accounts = {"asd123": 1500, "jdhsj2!3": 3000, "adgf3278": 10000}
 
 def main():
     """
-    :return:
+    the function wait for password to insert
     """
     while True:
         print("enter a password for your account")
@@ -11,6 +11,11 @@ def main():
 
 
 def reach_account(password):
+    """
+    the function manage which action to do next (withDraw, see balance, change pass, exit)
+    :param password:
+    :return:
+    """
     if password in accounts:
         print("choose 1 for printing your balance")
         print("choose 2 to withdraw money")
@@ -28,6 +33,11 @@ def reach_account(password):
 
 
 def with_draw_money(password):
+    """
+    the function withdraw money from account
+    :param password:
+    :return:
+    """
     print("amount of money to withdraw:")
     print("press 1 for 20")
     print("press 2 for 50")
@@ -45,6 +55,11 @@ def with_draw_money(password):
 
 
 def change_pass(password):
+    """
+    the function change the pass of the user
+    :param password:
+    :return:
+    """
     print("enter a new password")
     new_password = input()
     if new_password != password:
