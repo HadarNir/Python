@@ -1,5 +1,6 @@
 def main():
     """
+    the main insert the board the values
     """
     xo = []
     for i in range(3):
@@ -10,7 +11,11 @@ def main():
 
 
 def check_who_won(xo):
-    """"""
+    """
+    the function check which player won the game: 1, 2 or a tie
+    :param xo:
+    :return:
+    """
     won = False
     for i in range(3):
         if xo[0][i] == xo[1][i] and xo[1][i] == xo[2][i] and (xo[0][i] == "1" or xo[0][i] == "2"):
