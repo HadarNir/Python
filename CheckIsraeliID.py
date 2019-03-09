@@ -1,5 +1,6 @@
 def main():
     """
+    the main wait for an id to be inserted
     """
     print("enter an id")
     id_to_check = input()
@@ -7,6 +8,11 @@ def main():
 
 
 def check_id(id_to_check):
+    """
+    the function check if the id is okay and not a fake and print a message to the user
+    :param id_to_check:
+    :return:
+    """
     sum_of_digits = 0
     mul = 1
     for x in range(len(id_to_check) - 1):
