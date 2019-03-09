@@ -1,6 +1,7 @@
 
 def main():
     """
+    the main asks for a string to be entered in order to shrink it
     """
     print("enter a string to shrink")
     string = input()
@@ -9,6 +10,11 @@ def main():
 
 
 def shrink(string):
+    """
+    the function shrink the string
+    :param string:
+    :return new_string:
+    """
     new_string = string[0]
     count_letter = 0
     current_letter = string[0]
