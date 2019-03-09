@@ -11,10 +11,20 @@ def main():
 
 
 def multi(x):
+    """
+    the function multiply x by 2
+    :param x:
+    :return:
+    """
     return x * 2
 
 
 def map_func(f, list_for_func):
+    """"
+    the function make changes on each variable in the list according to the given function
+    :param f, list_for_func:
+    :return:
+    """
     for i in range(len(list_for_func)):
         list_for_func[i] = f(list_for_func[i])
     print(list_for_func)
